@@ -45,7 +45,14 @@ whoIsOlder();
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
 
-//CODE HERE
+const sameAge = () => {
+  if (amysAge === brittanisAge) {
+    console.log("Amy & Brittani were born in the same year");
+  } else {
+    console.log("Amy & Brittani were not born in the same year");
+  }
+};
+sameAge();
 
 ////////// PROBLEM 4 //////////
 
@@ -57,7 +64,16 @@ let rain = true;
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
-//CODE HERE
+const weather = () => {
+  if (temperature > 80 && rain === true) {
+    console.log("One should wear a t-shirt and take an unbrella");
+  } else if (60 < temperature > 80 && rain === true) {
+    console.log("One should war a rain-jacket");
+  } else {
+    console.log("One should wear a jacket and carry an umbrella");
+  }
+};
+weather();
 
 ////////// PROBLEM 5 //////////
 
@@ -65,7 +81,9 @@ let rain = true;
   Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
 */
 
-//CODE HERE
+for (let i = 0; i < 10; i++) {
+  console.log("Hello");
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -73,7 +91,9 @@ let rain = true;
   Create a for-loop that runs 10 times, logging the numbers 1 through 10. Ex, on the first iteration it would log 1, on the second iteration it would log 2.
 */
 
-//CODE HERE
+for (let x = 1; x <= 10; x++) {
+  console.log(x);
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -81,7 +101,9 @@ let rain = true;
   Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
 */
 
-//CODE HERE
+for (let x = 10 - 1; x > 0; x--) {
+  console.log(x);
+}
 
 ////////// PROBLEM 8 //////////
 
